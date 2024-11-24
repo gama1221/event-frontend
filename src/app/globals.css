@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fffdfd;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* preloader */
+.loader {
+  border-top-color: #3498db; /* Customize the spinner color */
+  animation: spin 1s ease-in-out infinite;
+  border-radius: 50%;
+  border-width: 4px;
+  border-color: #f3f3f3;
+  border-top-color: #3498db;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

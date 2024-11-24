@@ -1,28 +1,3 @@
-## Event Management System FrontEnd 
-
-First, run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the following result.
-## Landing or the first page of an event management system
-  - We can see the upcoming events with banner and event description
-  - There is an action which can be able to register for the event
-  - Also the system automatically reminder the registered user via his/her email address
-![My Image](./public/images/landing.png)
-## Create an event 
-  - Anyone can be able to create an event by filling the fields on the form
-![My Image](./public/images/create-event.png)
-
-## Register your self for the event 
-  - Anyone can be able to attend to the event through filling the form here
-![My Image](./public/images/register-event.png)
-
-## Dockerfile
-- we can contenerize the application using the following written dockerfile
-```sh
 # Use a lightweight Node.js image
 FROM node:18-alpine AS base
 
@@ -80,15 +55,3 @@ RUN ls -la .output/server
 
 # Start the Nuxt server using the output directory
 CMD ["node", ".output/server/index.mjs"]
-
-```
-## Frontend Technologies
-- NextJs
-- Typescript
-- Nodejs
-- Docker for contenerization
-## 📫 Contact Me
-- **Portfolio**: [[Getinet Amare](https://getinet.netlify.app/)](https://getinet.netlify.app/)
-- **Email**: [getinetamare@gmail.com](mailto:getinetamare@gmail.com)  
-- **LinkedIn**: [linkedin.com/in/getinet-mekonnen](linkedin.com/in/getinet-mekonnen)  
-- **GitHub**: [github.com/gama1221](github.com/gama1221)  
